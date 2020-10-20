@@ -43,6 +43,6 @@ class Mutation:
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)
 
-query = 'mutation { sendEmail(input: { email: "email" }) }'
+query = 'mutation { sendEmail(input: { email: "이메일" }) }'
 result = schema.execute_sync(query)
 print(result)
